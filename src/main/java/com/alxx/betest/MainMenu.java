@@ -263,12 +263,12 @@ public class MainMenu extends javax.swing.JFrame {
         } else {
             extractText();
 
-            if(!enResult.isEmpty()) {
+            if(!enResult.isEmpty() && enCheck.isSelected()) {
                 ResultView resultEn = new ResultView();
                 resultEn.setTitleAndResult("Result EN", enResult);
                 resultEn.setVisible(true);
             }
-            if(!chResult.isEmpty()) {
+            if(!chResult.isEmpty() && chCheck.isSelected()) {
                 ResultView resultCh = new ResultView();
                 resultCh.setTitleAndResult("Result CH", chResult);
                 resultCh.setVisible(true);
